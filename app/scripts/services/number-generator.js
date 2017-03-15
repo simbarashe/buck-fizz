@@ -38,14 +38,7 @@
         var result = [];
         for (var i = start; i <= end; i += step) {
           var description = '';
-        /*  var sortedDividends = $filter('orderBy')(dividends, '-dividend');
-          angular.forEach(sortedDividends, function (value) {
-            if (i % value.dividend === 0) {
-              description += value.description;
-            }
-          });*/
-
-          description = generateDescription(description,i);
+          description = generateDescription(description, i);
           if (!description) {
             description = i.toString();
           }
